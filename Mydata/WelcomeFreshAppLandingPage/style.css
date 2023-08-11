@@ -1,0 +1,77 @@
+.css-back-ground-hightlight{
+    height: 600px;
+    background-color: #fff;
+    width: auto;
+}
+.css-back-ground-hightlight-2{
+    background-image: url("images/bg_ribbon.png");
+    width: auto;
+}
+
+#welcome-title{
+    font-size: 450%;
+}
+#fresh-app-paragraph{
+    font-size: 150%;
+}
+.css-nut-bam-login{
+    height: 50px;
+    width: 100px;
+    background-color: #0062EE;
+    border-radius: 50px;
+}
+.css-nut-bam-app{
+    height: 50px;
+    width: 150px;
+    background-color: #0062EE;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.css-mau-nen-xam{
+    height: 649px;
+    background-color: #f8f9fa;
+    width: 100%;
+}
+
+.css-mau-nen-xam-2{
+    height: 600px;
+    background-color: #f8f9fa;
+    width: auto;
+}
+.shadow-1{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#css-gach-ngang{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #0062EE;
+    height: 4px;
+    border: 0px;
+    width: 100px;
+}
+
+.footer{
+    height: 500px;
+    background-image: url(images/bg_ribbon_footer.png);
+}
+.footer-2{
+    height: 500px;
+    background-color: #ffffff;
+    width: fit-content;
+}
+#css-gach-ngang-2{
+    margin-top: 30px;
+    background: #E6E9EC;
+    height: 2px;
+    border: 0px;
+    width: 1350px;
+}
+
+
+
+@media (min-width: 576px) and (max-width: 992px){
+    .container-fluid{
+        width: 80%;
+    }
+} 

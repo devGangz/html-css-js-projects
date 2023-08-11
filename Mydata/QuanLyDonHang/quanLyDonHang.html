@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTML/CSS/JS Projects</title>
+
+<!-- Google Font: Source Sans Pro -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+<!-- Theme style -->
+<link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+<!-- Select2 -->
+<link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+<link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../admin_console.html" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">DevCamp120</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4bch-yozsBzfiqlflQ6ADjv9ZywRIRjh8w&usqp=CAU" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="../../admin_console.html" class="d-block">PhongNN</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Danh mục dữ liệu
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <!-- <li class="nav-item">
+                <a href="../QuanLyDiemSinhVien/QuanLyDiemSinhVien.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Quản lý bảng điểm</p>
+                </a>
+              </li> -->
+
+              <li class="nav-item">
+                <a href="../Pizza365Project/Pizza365_1.9.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pizza 365 Project</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../LuckyDice/LuckyDice.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lucky Dice Game</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../QuanLyDonHang/quanLyDonHang.html" class="nav-link  active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Quản lý đơn hàng</p>
+                </a>
+              </li>
+			  
+			  <li class="nav-item">
+                <a href="../WelcomeFreshAppLandingPage/FreshLandingPage.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Fresh Landing Page</p>
+                </a>
+              </li>
+
+
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-12">
+                    
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+
+<div>
+<div class="text-center p-2">
+        <h2>Pizza's Order</h2>
+    </div>
+    <div class="jumbotron d-flex justify-content-center">
+        <!--Trạng thái Order-->
+        <div class="col-2 text-center">
+            <label for="">Trạng Thái Order</label>
+        </div>
+        <div class="col-2">
+            <select class="form-control select2" id="select-status" style="width: 100%;">
+                <option value="0">** All **</option>
+                <option value="open">Open</option>
+                <option value="confirmed">Comfirmed</option>
+                <option value="cancel">Cancel</option>
+            </select>
+        </div>
+        <!--Loại Pizza--> 
+        <div class="col-2 text-center">
+            <label for="">Loại Pizza</label>
+        </div>
+        <div class="col-2">
+            <select class="form-control select2" id="select-pizza-style" style="width: 100%;">
+                <option value="0">** All **</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Bacon">Bacon</option>
+                <option value="Seafood">Seafood</option>
+            </select>
+        </div>
+        <!--Button Filter-->
+        <div class="col-2">
+            <button class="form-control btn btn-dark" id="btn-filter"><i class="fas fa-funnel-dollar"></i>&nbsp;Filter</button>
+        </div>
+        <!--Button Add New-->
+        <div class="col-2">
+            <button class="form-control btn btn-primary" id="btn-add-new"><i class="fas fa-plus-circle"></i>&nbsp; Add New Order</button>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <table class="table table-bordered table-striped table-hover text-center" id="pizza-order-table">
+            <thead>
+                <tr>
+                    <th class="text-center">STT</th>
+                    <th class="text-center">Order Code</th>
+                    <th class="text-center">Kích Cỡ Combo</th>
+                    <th class="text-center">Loại Pizza</th>
+                    <th class="text-center">Nước Uống</th>
+                    <th class="text-center">Thành Tiền</th>
+                    <th class="text-center">Họ Và Tên</th>
+                    <th class="text-center">Số Điện Thoại</th>
+                    <th class="text-center">Trạng Thái</th>
+                    <th class="text-center">Chi Tiết</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <!--Modal Thêm mới-->
+    <div class="modal fade" id="add-new-modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="h5-modal-title">Add New Order</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <!--01 Pizza Size-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="select-pizza-size">1. Pizza Size</label>
+                            <div class="col-sm-7">
+                                <select class="form-control select2" id="select-pizza-size" style="width: 100%;">
+                                    <option value="0">Chọn Pizza's Size</option>
+                                    <option value="S">Small</option>
+                                    <option value="M">Medium</option>
+                                    <option value="L">Large</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!--02 Đường kính-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-duong-kinh">2. Đường Kính (cm)</label>
+                            <div class="col-sm-7">
+                                <input type="number" id="input-duong-kinh" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--03 Sườn-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-salad">3. Sườn (cái)</label>
+                            <div class="col-sm-7">
+                                <input type="number" id="input-suon" class="form-control" readonly> 
+                            </div>
+                        </div>
+
+                        <!--04 Salad-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-salad">4. Salad (g)</label>
+                            <div class="col-sm-7">
+                                <input type="number" id="input-salad" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--05 Pizza's Type-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="select-pizza-type">5. Pizza's Type</label>
+                            <div class="col-sm-7">
+                                <select class="form-control select2" id="select-pizza-type" style="width: 100%;">
+                                    <option value="0">Chọn Pizza's Type</option>
+                                    <option value="HAWAII">Hawaii</option>
+                                    <option value="SEAFOOD">Seafood</option>
+                                    <option value="BACON">Bacon</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!--06 ID voucher-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-id-voucher">6. ID Voucher</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-id-voucher" placeholder="(optional)" class="form-control">
+                            </div>
+                        </div>
+
+                        <!--07 Thành tiền-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-thanh-tien">7. Thành Tiền (vnd)</label>
+                            <div class="col-sm-7">
+                                <input type="number" id="input-thanh-tien" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--08 Giảm giá-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-giam-gia">8. Giảm giá (vnd)</label>
+                            <div class="col-sm-7">
+                                <input type="number" id="input-giam-gia" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--09 Loại Đồ Uống-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="select-drink-modal">9. Loại Đồ Uống</label>
+                            <div class="col-sm-7">
+                                <select class="form-control select2" id="select-drink-modal" style="width: 100%;"></select>
+                            </div>
+                        </div>
+
+                        <!--10 Số lượng nước uống-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-so-luong-nuoc-uong">10. S.lượng nước uống (ly)</label>
+                            <div class="col-sm-7">
+                                <input type="number" id="input-so-luong-nuoc-uong" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--11 Họ Và Tên-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-ho-ten">11. Họ Và Tên</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-ho-ten" placeholder="Nhập họ và tên..." class="form-control">
+                            </div>
+                        </div>
+
+                        <!--12 Email-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-email">12. Email</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-email" placeholder="(optional)" class="form-control">
+                            </div>
+                        </div>
+
+                        <!--13 Số Điện Thoại-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-sdt">13. Số Điện Thoại</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-sdt" placeholder="Nhập số điện thoại..." class="form-control">
+                            </div>
+                        </div>
+
+                        <!--14 Địa Chỉ-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-dia-chi">14. Địa chỉ</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-dia-chi" placeholder="Nhập địa chỉ..." class="form-control">
+                            </div>
+                        </div>
+
+                        <!--15 Lời Nhắn-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-loi-nhan">15. Lời Nhắn</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-loi-nhan" placeholder="(optional)" class="form-control">
+                            </div>
+                        </div>
+
+                        <!--16 Ngày Order
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-dia-chi">16. Ngày Order</label>
+                            <div class="col-sm-7">
+                                <input type="date" id="input-ngay-order" placeholder="Nhập ngày order..." class="form-control">
+                            </div>
+                        </div>
+
+                        17 Ngày Chỉnh Sửa
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-ngay-chinh-sua">17. Ngày Chỉnh Sửa</label>
+                            <div class="col-sm-7">
+                                <input type="date" id="input-ngay-tao-order" placeholder="Nhập ngày chỉnh sửa..." class="form-control">
+                            </div>
+                        </div> -->
+
+                        <!--18 Trạng thái đơn hàng-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-trang-thai">16. Trạng thái</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-trang-thai" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div class="modal-footer row col-sm-12">
+                        <button class="btn btn-success" id="btn-add-new-order-modal">Add New Order</button>
+                        <button class="btn btn-danger" id="btn-cancel" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modal hiển thị chi tiết order-->
+    <div class="modal fade" id="modal-update-order">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="h5-modal-title">Order detail!!!</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!--01 Order Code-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-order-code-update">1. Order Code</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-order-code-update" placeholder="Nhập order code..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--02 Pizza Size
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="select-pizza-size-update">2. Pizza's Size</label>
+                            <div class="col-sm-7">
+                                <select id="select-pizza-size-update" class="form-control">
+                                    <option value="0">Chọn Pizza's Size</option>
+                                    <option value="S">Small</option>
+                                    <option value="M">Medium</option>
+                                    <option value="L">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        -->
+
+                        <!--02 Pizza Size-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-pizza-size-update">2. Pizza Size</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-pizza-size-update" placeholder="Tự hiển thị..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--03 Đường kính-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-duong-kinh-update">3. Đường Kính (cm)</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-duong-kinh-update" placeholder="Nhập đường kính..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--04 Sườn-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-salad-update">4. Sườn (cái)</label>
+                            <div class="col-sm-7">
+                                <input type="number" id="input-suon-update" placeholder="Nhập số lượng sườn..." class="form-control" readonly> 
+                            </div>
+                        </div>
+
+                        <!--05 Salad-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-salad-update">5. Salad (g)</label>
+                            <div class="col-sm-7">
+                                <input type="number" id="input-salad-update" placeholder="Nhập số lượng salad..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--06 Pizza's Type-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-pizza-type-update">6. Pizza's Type</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-pizza-type-update" placeholder="Tự hiển thị..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--
+                        06 Pizza's Type
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="select-pizza-type-update">6. Pizza's Type</label>
+                            <div class="col-sm-7">
+                                <select id="select-pizza-type-update" class="form-control" readonly>
+                                    <option value="0">Chọn Pizza's Type</option>
+                                    <option value="HAWAII">Hawaii</option>
+                                    <option value="SEAFOOD">Seafood</option>
+                                    <option value="BACON">Bacon</option>
+                                </select>
+                            </div>
+                        </div>
+                        -->
+
+                        <!--07 ID voucher-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-id-voucher-update">7. ID Voucher</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-id-voucher-update" placeholder="Nhập Id voucher..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--08 Thành tiền-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-thanh-tien-update">8. Thành Tiền (vnd)</label>
+                            <div class="col-sm-7">
+                                <input type="number" id="input-thanh-tien-update" placeholder="Nhập số tiền cần thanh toán..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--09 Giảm giá-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-giam-gia-update">9. Giảm giá (vnd)</label>
+                            <div class="col-sm-7">
+                                <input type="number" id="input-giam-gia-update" placeholder="Nhập số tiền được giảm..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--10 Loại Đồ Uống-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-loai-do-uong-update">10. Loại Đồ Uống</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-loai-do-uong-update" placeholder="Tự hiển thị" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--
+                        10 Loại Đồ Uống
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="select-loai-do-uong">10. Loại Đồ Uống</label>
+                            <div class="col-sm-7">
+                                <select id="select-drink-update" class="form-control" readonly>
+                                    <option value="0">Chọn Loại Đồ Uống</option>
+                                </select>
+                            </div>
+                        </div>
+                        -->
+
+                        <!--11 Số lượng nước uống-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-so-luong-nuoc-uong-update">11. S.lượng nước uống (ly)</label>
+                            <div class="col-sm-7">
+                                <input type="number" id="input-so-luong-nuoc-uong-update" placeholder="Nhập số lượng nước uống..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--12 Họ Và Tên-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-ho-ten-update">12. Họ Và Tên</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-ho-ten-update" placeholder="Nhập họ và tên..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--13 Email-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-email-update">13. Email</label>
+                            <div class="col-sm-7">
+                                <input type="email" id="input-email-update" placeholder="(optinal)" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--14 Số Điện Thoại-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-sdt-update">14. Số Điện Thoại</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-sdt-update" placeholder="Nhập số điện thoại..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--15 Địa Chỉ-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-dia-chi-update">15. Địa chỉ</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-dia-chi-update" placeholder="Nhập địa chỉ..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--16 Lời Nhắn-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-loi-nhan-update">16. Lời Nhắn</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-loi-nhan-update" placeholder="(optinal)" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--17 Ngày Order-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-dia-chi-update">17. Ngày Order</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-ngay-order-update" placeholder="Nhập ngày order..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--18 Ngày Chỉnh Sửa-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-ngay-chinh-sua-update">18. Ngày Chỉnh Sửa</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-ngay-tao-order-update" placeholder="Nhập ngày chỉnh sửa..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <!--19 Trạng thái đơn hàng-->
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-5" for="input-ngay-chinh-sua-update">19. Trạng thái hiện tại</label>
+                            <div class="col-sm-7">
+                                <input type="text" id="input-trang-thai-update" placeholder="Trạng thái đơn hàng..." class="form-control" readonly>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div class="modal-footer d-flex justify-content-center text-center">
+                        <button class="btn btn-success col-3" id="btn-confirm-order">Confirmed</button>
+                        <button class="btn btn-danger col-2" id="btn-cancel-order">Cancel</button>
+                        <button class="btn btn-light border border-dark col-2" id="btn-open-order">Open</button>
+                        <button class="btn btn-dark col-2" id="btn-delete-order">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal xoá dữ liệu-->
+<div>
+    <div id="delete-order-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="h5-modal-title">Delete Order</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <label>Bạn có chắc muốn xoá đơn hàng này?</label>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" id="btn-delete-order-modal">OK! Delete</button>
+                    <button class="btn btn-secondary" id="btn-delete-cancel" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+   </section>
+    <!-- /.content -->
+    </div>
+  <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+        <div class="float-right d-none d-sm-block">
+        <b>Version</b> 3.2.0
+        </div>
+        <strong>Copyright &copy; 2022-2023</strong> DevCamp-NamPhong All rights reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+
+<!--Datatable-->
+<link rel = "stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap4.min.css">
+<script src = "https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script src = "https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap4.min.js"></script>
+
+<!--Nhúng file Js vào-->
+<script src="script_1_Loading_Data.js"></script>
+<script src="script_2_Button_Filter.js"></script>
+<script src="script_3_Modal_Order_Detail.js"></script>
+<script src="script_4_Modal_Add_New.js"></script>
+<script src="script_5_Modal_Delete.js"></script>
+
+<!--Select 2-->
+<script src="../../plugins/select2/js/select2.full.min.js"></script>
+<script>
+    $(function () {
+        //Initialize Select2 Elements
+        $('.select2').select2()
+
+        //Initialize Select2 Elements
+        $('.select2').select2({
+            theme: 'bootstrap4'
+        })
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML/CSS/JS Projects</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Theme My CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../admin_console.html" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">DevCamp120</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4bch-yozsBzfiqlflQ6ADjv9ZywRIRjh8w&usqp=CAU" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="../../admin_console.html" class="d-block">PhongNN</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Danh mục dữ liệu
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+
+              <li class="nav-item">
+                <a href="../Pizza365Project/Pizza365_1.9.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pizza 365 Project</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../LuckyDice/LuckyDice.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lucky Dice Game</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../QuanLyDonHang/quanLyDonHang.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Quản lý đơn hàng</p>
+                </a>
+              </li>
+			  
+			  <li class="nav-item">
+                <a href="../WelcomeFreshAppLandingPage/FreshLandingPage.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Fresh Landing Page</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-12">
+                    <h3>Chào mừng bạn đến với trang quản trị, chúng tôi có các gợi ý cho bạn ở đây:</h3>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+<div class="container">
+  <!--Thanh nav-bar -->
+    <div class="col-sm-12" id="nav-bar">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light pt-0 css-nav-orange">
+                <a class="nav-title" href="#"></a>
+                <button class="nav-bar-toggler btn btn-light btn-sm mt-2" type="button" data-toggle="collapse" data-target="#navbarToggler01" aria-controls="navbarToggler01" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="#navbarToggler-id" class="navbar-toggler-icon"><i class="far fa-bars"></i></span></button>
+
+                <div class="collapse navbar-collapse col-sm-5 mx-auto" id="navbarToggler01">
+                    <ul class="navbar-nav nav-fill">
+                        <!--Trang chủ-->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <!--Conbo-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#chon-size-pizza">Combo</a>
+                        </li>
+                        <!--Loại Pizza-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#chon-loai-pizza">Loại Pizzaa</a>
+                        </li>
+                        <!--Loại Pizza-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gui-don-hang">Gửi đơn hàng</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>  
+    </div>
+
+  <!-- Content -->
+  <div class="container" style="padding: 60px 0 50px 0;">
+      <!-- 1.0 Logo Pizza 365-->
+      <div class="col-sm-12">
+          <img src="images/logo1.png" style="width: 50%; margin-bottom: 5px;" alt="">
+      </div>
+      <!-- 2.0 Slide -->
+      <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img class="d-block w-100" src="images/1.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                      <img class="d-block w-100" src="images/2.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                      <img class="d-block w-100" src="images/3.jpg" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                      <img class="d-block w-100" src="images/4.jpg" alt="Third slide">
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </div>
+      <!-- 3.0 Tiêu đề 365 và gạch ngang-->
+      <div class="text-center mt-5 pb-2 col-sm-12 text-warning">
+          <h2 class="css-cam-tieu-de">Tại sao lại Pizza 365</h2>
+          <hr class="line-1">
+      </div>
+      <!-- 4.0 4 Đoạn văn giới thiệu-->
+      <div class="row m-1">
+          <div class="col-sm-3 border border-warning pb-5 css-lightgoldenrodyellow">
+              <h3 class="pb-4 pt-4 pl-3">Đa dạng</h3>
+              <h6 class="pl-3">Số lượng pizza đa dạng, có <br> đầy đủ các loại pizza đang hot <br> nhất hiện nay.</h6>
+          </div>
+          <div class="col-sm-3 border border-warning pb-5 css-yellow">
+              <h3 class="pb-4 pt-4 pl-3">Chất lượng</h3>
+              <h6 class="pl-3">Nguyên liệu sạch 100% rõ <br> nguồn gốc, quy trình chế biến đảm bảo vệ sinh an toàn thực phẩm.</h6>
+          </div>
+          <div class="col-sm-3 border border-warning pb-5 css-lightsalmon">
+              <h3 class="pb-4 pt-4 pl-3">Hương vị</h3>
+              <h6 class="pl-3">Đảm bảo hương vị ngon, độc, <br> lạ mà bạn chỉ có thể trải <br>nghiệm từ Pizza 365.</h6>
+          </div>
+          <div class="col-sm-3 border border-warning pb-5 css-orange">
+              <h3 class="pb-4 pt-4 pl-3">Dịch vụ</h3>
+              <h6 class="pl-3">Nhân viên thân thiện, nhà <br> hàng hiện đại. Dịch vụ giao <br> hàng nhanh chất lượng, tân <br>tiến.</h6>
+          </div>
+      </div>
+      <!-- 5.0 Tiêu đề chọn size Pizza; gạch ngang và dòng kêu gọi chọn size-->
+      <div class="text-center mt-5 pb-4 col-sm-12 text-warning" id="chon-size-pizza">
+          <h2 class="css-cam-tieu-de">Chọn size Pizza</h2>
+          <hr class="line-2">
+          <p>Chọn combo pizza phù hợp với nhu cầu của bạn.</p>
+      </div>
+
+      <!-- 6.0 Khối 3 cái card size pizza-->
+      <div class="row ml-1 mr-1 background-small">
+          <!--S(Small)--> 
+          <div class="col-sm-4 padding-small">
+              <div class="card css-medium-card" style="width: 22rem;" id="css-card">
+                  <div class="d-flex justify-content-center css-cam-card">
+                      <h3 class="p-2">S (small)</h3>
+                  </div>
+                  <div class="card-body text-center">
+                      <p>Đường kính: <strong>20cm</strong></p>
+                      <hr>
+                      <p>Sườn nướng: <strong>2</strong></p>
+                      <hr>
+                      <p>Salad: <strong>200g</strong></p>
+                      <hr>
+                      <p>Nước ngọt: <strong>2</strong></p>
+                      <hr>
+                      <h1><strong>150.000</strong></h1>
+                      <p>VNĐ</p>
+                  </div>
+                  <div class="d-flex justify-content-center pt-3 pb-3 pl-4 pr-4 css-bg-chon">
+                      <button class="btn btn-warning col-sm-12 css-cam-card" id="btn-small"><strong>Chọn</strong></button> 
+                  </div>
+              </div>
+          </div>
+          <!--M(Medium)-->
+          <div class="col-sm-4 padding-small">
+              <div class="card d-flex justify-content-center" style="width: 22rem;">
+                  <div class="d-flex justify-content-center bg-warning">
+                      <h3 class="p-2">M (medium)</h3>
+                  </div>
+                  <div class="card-body text-center">
+                      <p>Đường kính: <strong>25cm</strong></p>
+                      <hr>
+                      <p>Sườn nướng: <strong>4</strong></p>
+                      <hr>
+                      <p>Salad: <strong>300g</strong></p>
+                      <hr>
+                      <p>Nước ngọt: <strong>3</strong></p>
+                      <hr>
+                      <h1><strong>200.000</strong></h1>
+                      <p>VNĐ</p>
+                  </div>
+                  <div class="d-flex justify-content-center pt-3 pb-3 pl-4 pr-4 css-bg-chon">
+                      <button class="btn btn-warning col-sm-12 css-cam-card" id="btn-medium"><strong>Chọn</strong></button>
+                  </div>
+              </div>
+          </div>
+          <!--L(Large)-->
+          <div class="col-sm-4 padding-small">
+              <div class="card" style="width: 22rem;">
+                  <div class="d-flex justify-content-center css-cam-card">
+                      <h3 class="p-2">L (large)</h3>
+                  </div>
+                  <div class="card-body text-center">
+                      <p>Đường kính: <strong>30cm</strong></p>
+                      <hr>
+                      <p>Sườn nướng: <strong>8</strong></p>
+                      <hr>
+                      <p>Salad: <strong>500g</strong></p>
+                      <hr>
+                      <p>Nước ngọt: <strong>4</strong></p>
+                      <hr>
+                      <h1><strong>250.000</strong></h1>
+                      <p>VNĐ</p>
+                  </div>
+                  <div class="d-flex justify-content-center pt-3 pb-3 pl-4 pr-4 css-bg-chon">
+                      <button class="btn btn-warning col-sm-12 css-cam-card" id="btn-large"><strong>Chọn</strong></button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- 7.0 Tiêu đề chọn loại pizza; gạch ngang-->
+      <div class="text-center mt-5 pb-4 col-sm-12 text-warning" id="chon-loai-pizza">
+          <h2 class="css-cam-tieu-de">Chọn Loại Pizza</h2>
+          <hr class="line-2">
+      </div>
+      <!-- 8.0 Chọn loại pizza-->
+      <div class="row ml-1 mr-1 background-small">
+          <!--OCEAN MANIA--> 
+          <div class="col-sm-4 padding-small">
+              <div class="card" style="width: 22rem;">
+                  <div class="d-flex justify-content-center">
+                      <img class="card-img-top" src="images/seafood.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card-body text-center">
+                      <h4><strong>OCEAN MANIA</strong></h4>
+                      <p class="pt-1">PIZZA HẢI SẢN SỐT MAYONNAISE</p>
+                      <p>Sốt cà chua, phô mai Mozzarella, tôm, mực, thanh cua, hành tây.</p>
+                      <button class="btn btn-warning col-sm-12 css-cam-card mb-3" id="btn-seafood"><strong>Chọn</strong></button> 
+                  </div>
+              </div>
+          </div>
+          <!--OCEAN MANIA--> 
+          <div class="col-sm-4 padding-small">
+              <div class="card" style="width: 22rem;">
+                  <div class="d-flex justify-content-center">
+                      <img class="card-img-top" src="images/hawaiian.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card-body text-center">
+                      <h4><strong>HAWAIIAN</strong></h4>
+                      <p class="pt-1">PIZZA DĂM BÔNG KIỂU HAWAII</p>
+                      <p>Sốt cà chua, phô mai Mozzarella, thịt dăm bông, thơm.</p>
+                      <button class="btn btn-warning col-sm-12 css-cam-card mb-3" id="btn-hawaii"><strong>Chọn</strong></button> 
+                  </div>
+              </div>
+          </div>
+          <!--CHEESY CHIKEN BACON--> 
+          <div class="col-sm-4 padding-small">
+              <div class="card" style="width: 22rem;">
+                  <div class="d-flex justify-content-center">
+                      <img class="card-img-top" src="images/bacon.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card-body text-center">
+                      <h4><strong>CHEESY CHICKEN BACON</strong></h4>
+                      <p class="pt-1">PIZZA GÀ PHÔ MAI THỊT HEO XÔNG KHÓI</p>
+                      <p>Sốt phô mai, thịt gà, thịt heo muối, phô mai Mozzarella, cà chua.</p>
+                      <button class="btn btn-warning col-sm-12 css-cam-card mb-3" id="btn-bacon"><strong>Chọn</strong></button> 
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- 9.0 Tiêu đề chọn đồ uống, gạch ngang-->
+      <div class="text-center mt-5 pb-4 col-sm-12 text-warning">
+          <h2 class="css-cam-tieu-de">Chọn đồ uống</h2>
+          <hr class="line-2">
+      </div>
+      <!--10 Select chọn đồ uống -->
+      <div class="col-sm-12 css-select-do-uong">
+          <select name="" id="select-drinks" class="form-control">
+          </select>
+      </div>
+      <!-- 11 Tiêu đề chọn đồ uống, gạch ngang-->
+      <div class="text-center mt-5 pb-4 col-sm-12 text-warning">
+          <h2 class="css-cam-tieu-de" id="gui-don-hang">Gửi đơn hàng</h2>
+          <hr class="line-2">
+      </div>
+      <!-- 12 Form nhập thông tin gửi hàng-->
+      <div class="col-sm-12">
+          <form action="">
+              <!---->
+              <label for="">Tên:</label>
+              <input type="text" name="" id="inp-ho-ten" placeholder="Nhập tên" class="form-control" required>
+              <!---->
+              <label for="" class="pt-2">Email: </label>
+              <input type="email" name="" id="inp-email" placeholder="Nhập email" class="form-control" required>
+              <!---->
+              <label for="" class="pt-2">Số điện thoại: </label>
+              <input type="text" name="" id="inp-sdt" placeholder="Nhập số điện thoại" class="form-control" required>
+              <!---->
+              <label for="" class="pt-2">Địa chỉ:</label>
+              <input type="text" name="" id="inp-dia-chi" placeholder="Nhập địa chỉ" class="form-control" required>
+              <!---->
+              <label for="" class="pt-2">Mã giảm giá:</label>
+              <input type="text" name="" id="inp-voucher" placeholder="Nhập mã giảm giá" class="form-control" required>
+              <!---->
+              <label for="" class="pt-2">Lời nhắn:</label>
+              <input type="text" name="" id="inp-loi-nhan" placeholder="Nhập lời nhắn" class="form-control">
+          </form>
+          <button class="btn btn-warning css-cam-card col-sm-12 mt-3" id="btn-send-click"><strong>Gửi</strong></button>
+      </div>
+  </div>
+
+  <!--Footer-->
+  <div class="container-fluid mt-2 footer css-footer-medium">
+      <div class="pt-4 text-center"><strong>Footer</strong></div>
+      <div class="pt-3 text-center">
+          <a href="#"><button class="btn btn-dark"><i class="fas fa-arrow-up"></i>&nbsp; On the top</button></a>
+      </div>
+      <div class="pt-3 text-center">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-snapchat-square"></i>
+          <i class="fab fa-pinterest-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-linkedin"></i>
+      </div>
+      <div class="pt-2 text-center"><strong>Powered by DEVCAMP</strong></div>
+  </div>
+
+  <!--Modal Thông tin đơn hàng-->
+  <div class="modal fade" id="modal-order-information">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="h5-modal-title">Thông tin đơn hàng</h5>
+                  <button class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <!--01 Họ tên-->
+                      <div class="row form-group">
+                          <label class="col-form-label col-sm-5" for="input-modal-ho-va-ten">1. Họ và tên</label>
+                          <div class="col-sm-12">
+                              <input type="text" id="input-modal-ho-va-ten" class="form-control" readonly>
+                          </div>
+                      </div>
+
+                      <!--02 Số điện thoại-->
+                      <div class="row form-group">
+                          <label class="col-form-label col-sm-5" for="input-modal-sdt">2. Số điện thoại</label>
+                          <div class="col-sm-12">
+                              <input type="text" id="input-modal-sdt" class="form-control" readonly>
+                          </div>
+                      </div>
+
+                      <!--03 Địa chỉ-->
+                      <div class="row form-group">
+                          <label class="col-form-label col-sm-5" for="input-modal-dia-chi">3. Địa chỉ</label>
+                          <div class="col-sm-12">
+                              <input type="text" id="input-modal-dia-chi" class="form-control" readonly>
+                          </div>
+                      </div>
+
+                      <!--04 Lời nhắn-->
+                      <div class="row form-group">
+                          <label class="col-form-label col-sm-5" for="input-modal-loi-nhan">4. Lời nhắn</label>
+                          <div class="col-sm-12">
+                              <input type="text" id="input-modal-loi-nhan" class="form-control" readonly>
+                          </div>
+                      </div>
+
+                      <!--05 Mã giảm giá-->
+                      <div class="row form-group">
+                          <label class="col-form-label col-sm-5" for="input-modal-voucher">5. Mã giảm giá</label>
+                          <div class="col-sm-12">
+                              <input type="text" id="input-modal-voucher" class="form-control" readonly>
+                          </div>
+                      </div>
+
+                      <!--06 Thông tin chi tiết-->
+                      <div class="row form-group">
+                          <label class="col-form-label col-sm-5" for="areatext-detail-infor">6. Thông tin chi tiết</label>
+                          <div class="col-sm-12">
+                              <textarea class="form-control" name="" id="areatext-detail-infor" cols="30" rows="10" readonly></textarea>
+                          </div>
+                      </div>
+                  </form>
+                  <div class="modal-footer row col-sm-12">
+                      <button class="btn btn-success" id="btn-create-order">Tạo đơn hàng</button>
+                      <button class="btn btn-danger" id="btn-return">Quay lại</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!--Modal thông báo thành công-->
+  <div>
+      <div id="success-order-create" class="modal fade" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content css-change-bg">
+                  <div class="modal-header">
+                      <h5 class="modal-title text-center" id="h5-modal-title">Thông báo đặt hàng thành công</h5>
+                      <button class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <label> Cảm ơn bạn đã đặt hàng tại Pizza 365. Mã đơn hàng của bạn là: </label>
+                      <input type="text" class="form-control col-sm-4 mx-auto" style="font-weight: bold; text-align: center;" id="inp-readonly-order-code" readonly>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+</div>
+
+
+    </section>
+    <!-- /.content -->
+    </div>
+  <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+        <div class="float-right d-none d-sm-block">
+        <b>Version</b> 3.2.0
+        </div>
+        <strong>Copyright &copy; 2022-2023</strong> DevCamp-NamPhong All rights reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+  <!--Link file Js External-->
+<script src="task_43_40.js"></script>
+<script src="task_43_50.js"></script>
+<script src="task_43_60.js"></script>
+<script src="task_43_80_File_1.js"></script>
+<script src="task_43_80_File_2.js"></script>
+</body>
+</html>

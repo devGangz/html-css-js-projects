@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML/CSS/JS Projects</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../admin_console.html" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">DevCamp120</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4bch-yozsBzfiqlflQ6ADjv9ZywRIRjh8w&usqp=CAU" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="../../admin_console.html" class="d-block">PhongNN</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Danh mục dữ liệu
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+
+            <li class="nav-item">
+                <a href="../Pizza365Project/Pizza365_1.9.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pizza 365 Project</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="../LuckyDice/LuckyDice.html" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Lucky Dice Game</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="../QuanLyDonHang/quanLyDonHang.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Quản lý đơn hàng</p>
+                </a>
+            </li>
+			
+			<li class="nav-item">
+                <a href="../WelcomeFreshAppLandingPage/FreshLandingPage.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Fresh Landing Page</p>
+                </a>
+             </li>
+
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+    <!-- Main content -->
+    <section class="content">
+<div class="">
+    <style>
+        .picture-cover{
+            background-image: url("LuckyDiceImages/cover.jpg");
+            min-height: 90px;
+            margin-bottom: 5px;
+        }
+    </style>
+    <body>
+        <div class="container-fluid picture-cover"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <!--Information-->
+                    <div class="row form-group">
+                        <div class="col-12 ">
+                            <h4 class="text text-center">NHẬP THÔNG TIN CỦA BẠN</h4>
+                        </div>
+                    </div>
+                    <!--Username-->
+                    <div class="row form-group">
+                        <div class="col-4">
+                            <label for="">User Name</label>
+                        </div>
+                        <div class="col-8">
+                            <input id="inp-user-name" class="form-control" type="text">
+                        </div> 
+                    </div>
+                    <!--Firstname-->
+                    <div class="row form-group">
+                        <div class="col-4 ">
+                            <label for="">First Name</label>
+                        </div>
+                        <div class="col-8">
+                            <input id="inp-first-name" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <!--Lastname-->
+                    <div class="row form-group">
+                        <div class="col-4">
+                            <label for="">Last Name</label>
+                        </div>
+                        <div class="col-8">
+                            <input id="inp-last-name" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="row form-group text-center">
+                        <div class="col-12">
+                            <br><br>
+                            <img id="LuckyDiceGam" src="Image2/LuckyDiceGam.gif" alt="" style="width:70%">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <!--Thêm nút "ném"-->
+                    <div class="row form-group">
+                        <div class="col-12 text-center">
+                            <button onclick="onButtonNemClick()" id="button-nem" class="btn btn-success w-75">Ném</button>
+                        </div>
+                    </div>
+                    <!--Ảnh xúc xắc-->
+                    <div class="row form-group">
+                        <div class="col-12 text-center">
+                            <img id="img-number-dice" src="Image2/dice.gif" alt="" style="width:70%">
+                        </div>
+                    </div>
+                    <!--Text thông báo kết quả-->
+                    <div class="row form-group">
+                        <div class="col-12 text-center">
+                            <p id="p-thong-bao"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-3">
+                    <!--Text Voucher/ID/%-->
+                    <div class="row form-group">
+                        <div class="col-12 text-center">
+                            <p class="alert alert-primary">Voucher</p>
+                            <p id="p-voucher-id" class="alert alert-primary">****</p>
+                            <p id="p-voucher-percent" class="alert alert-primary">***</p>
+                        </div>
+                    </div>
+                    <!--Image phan thuong-->
+                    <div class="row form-group">
+                        <div class="col-12 text-center">
+                            <img id="img-phan-thuong" src="LuckyDiceImages/gift.png" alt="" style="width:40%">
+                            <p id="p-phan-thuong" class="alert alert-success">Nếu may mắn hơn bạn có thể nhận thêm được 1 món quà</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group text-center"> 
+                <!--3 nut button-->
+                <div class="col-12">
+                    <button onclick="onDiceHistoryClick()" id="btn-dice-history" class="btn btn-danger" >Dice History</button>
+                    <button onclick="onVoucherHistoryClick()" id="btn-voucher-history" class="btn btn-danger" >Voucher History</button>
+                    <button onclick="onPresentHistoryClick()" id="btn-present-history" class="btn btn-danger" >Present History</button>
+                </div>
+            </div>
+                
+            <div class="row"> 
+                <div class="col-12">
+                    <table id="history-placeholder-table" class="table table-striped table-bordered table-hover text-center">
+                        <thead>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+    // Vùng 1: Khai báo biến toàn cục
+    const gREQUEST_STATUS_OK = 200;
+    const gREQUEST_READY_STATUS_FINISH_AND_OK = 4;
+    const gBASE_URL = "http://203.171.20.210:8080/devcamp-lucky-dice";
+    const gUTF8_TEXT_APPLICATION_HEADER = "application/json;charset=UTF-8";
+    const gEND_OF_ROW_COL = -1;
+
+    // Vùng 2: Xử lý sự kiện cho Element
+    // Vùng 3: Khai báo hàm xử lý sự kiện
+    // Xử lý sự kiện khi nhấn nút Ném
+    function onButtonNemClick(){
+        var vUser = {
+            username:"",
+            firstname:"",
+            lastname:""
+        }
+    // B1: thu thập dữ liệu
+    thuThapDuLieu(vUser)
+    // B2: Validate dữ liệu
+    var vResult = validateThongTin(vUser)
+        if(vResult){
+        //B3: Gọi API
+        var vXmlHttp = new XMLHttpRequest;
+        goiAPItungXucXac(vUser,vXmlHttp)
+        //B4* Xử lý kết quả
+            vXmlHttp.onreadystatechange = function() {
+                if(this.readyState == gREQUEST_READY_STATUS_FINISH_AND_OK && this.status == gREQUEST_STATUS_OK){
+                // B4: Hiển thị kết quả lên console
+                hienThiXucXac(vXmlHttp);
+                }
+            }
+        }
+    }
+
+    // Xử lý sự kiện khi nhấn nút "Dice History"
+    function onDiceHistoryClick(){
+        var vUser = {
+            username:"",
+            firstname:"",
+            lastname:""
+        }
+    // B1: thu thập dữ liệu
+    thuThapDuLieu(vUser)
+    // B2: Validate dữ liệu
+    var vResult = validateThongTin(vUser)  
+        if(vResult){
+        // B3: Gọi API Dice History
+            var vXmlHttp = new XMLHttpRequest;
+            goiAPIDiceHistory(vUser,vXmlHttp)
+            //B4* Xử lý kết quả    
+            vXmlHttp.onreadystatechange = function() {
+                if(this.readyState == gREQUEST_READY_STATUS_FINISH_AND_OK && this.status == gREQUEST_STATUS_OK){
+                // B4: Hiển thị kết quả lên console
+                hienThiLichSu(vXmlHttp);
+                hienThiLichSuLenBang(vXmlHttp);
+                }
+            }    
+        }
+    }
+
+    // Xử lý sự kiện khi nhấn nút "Voucher History"
+    function onVoucherHistoryClick(){
+        var vUser = {
+            username:"",
+            firstname:"",
+            lastname:""
+        }
+    // B1: thu thập dữ liệu
+    thuThapDuLieu(vUser)
+    // B2: Validate dữ liệu
+    var vResult = validateThongTin(vUser)  
+        if(vResult){
+        // B3: Gọi API Dice History
+            var vXmlHttp = new XMLHttpRequest;
+            goiAPIvoucherHistory(vUser,vXmlHttp)
+            //B4* Xử lý kết quả    
+            vXmlHttp.onreadystatechange = function() {
+                if(this.readyState == gREQUEST_READY_STATUS_FINISH_AND_OK && this.status == gREQUEST_STATUS_OK){
+                // B4: Hiển thị kết quả lên console
+                hienThiVoucherLenBang(vXmlHttp);
+                }
+            }    
+        }
+    }
+
+     // Xử lý sự kiện khi nhấn nút "Voucher History"
+    function onPresentHistoryClick(){
+        var vUser = {
+            username:"",
+            firstname:"",
+            lastname:""
+        }
+    // B1: thu thập dữ liệu
+    thuThapDuLieu(vUser)
+    // B2: Validate dữ liệu
+    var vResult = validateThongTin(vUser)  
+        if(vResult){
+        // B3: Gọi API Dice History
+            var vXmlHttp = new XMLHttpRequest;
+            goiAPIpresentHistory(vUser,vXmlHttp)
+            //B4* Xử lý kết quả    
+            vXmlHttp.onreadystatechange = function() {
+                if(this.readyState == gREQUEST_READY_STATUS_FINISH_AND_OK && this.status == gREQUEST_STATUS_OK){
+                // B4: Hiển thị kết quả lên console
+                hienThiPresentLenBang(vXmlHttp);
+                }
+            }    
+        }
+    }
+
+    // Vùng 4: Khai báo hàm dùng chung
+    // Khai báo hàm thu thập dữ liệu
+    function thuThapDuLieu(paramUser){
+    'use strict';
+        var vUserInput = document.getElementById("inp-user-name"); // thu thập dữ liệu username
+        var vFnameInput = document.getElementById("inp-first-name"); // thu thập dữ liệu firstname
+        var vLnameInput = document.getElementById("inp-last-name"); // thu thập dữ liệu lastname
+
+        paramUser.username = vUserInput.value.trim();
+        paramUser.firstname = vFnameInput.value.trim();
+        paramUser.lastname = vLnameInput.value.trim();
+    }
+
+    // Khai báo hàm kiểm tra dữ liệu
+    function validateThongTin(paramUser){
+    'use strict';
+        if(paramUser.username==""){
+            alert("Bạn chưa nhập username");
+            return false;
+        }
+
+        if(paramUser.firstname==""){
+            alert("Bạn chưa nhập firstname");
+            return false;
+        }
+
+        if(paramUser.lastname==""){
+            alert("Bạn chưa nhập lastname");
+            return false
+        }
+        return true;
+    }
+
+    // Khai báo hàm gọi APi tung xúc xắc
+    function goiAPItungXucXac(paramUser,paramXMLhttp){
+    'use strict';
+        var vUserData = JSON.stringify(paramUser);
+        paramXMLhttp.open("POST", gBASE_URL + "/dice",true);
+        paramXMLhttp.setRequestHeader("Content-Type",gUTF8_TEXT_APPLICATION_HEADER);
+        paramXMLhttp.send(vUserData);
+    }
+
+    // Khai báo hàm hiển thị thông tin 
+    function hienThiXucXac(paramXMLhttp){
+    'use strict';
+        var vResponse = JSON.parse(paramXMLhttp.responseText);
+        var vDiceNumber = vResponse.dice;
+        console.log(vResponse);
+        
+        console.log("%c Số mặt xúc xắc là: " + vDiceNumber,"color:pink");
+        var vImgNumberDice = document.getElementById("img-number-dice");
+        var vTextThongBao = document.getElementById("p-thong-bao");
+        var vVoucherHienThi = document.getElementById("p-voucher-id");
+        var vPhanTramHienThi = document.getElementById("p-voucher-percent");
+        var vPhanThuongHienThi = document.getElementById("img-phan-thuong");
+        var vThongBaoPhanQua = document.getElementById("p-phan-thuong")
+
+        if(vDiceNumber == 1){
+            vImgNumberDice.src ="Image2/1.png";
+            vTextThongBao.innerText = "1 Điểm - Hãy ném lại lần nữa";
+            vTextThongBao.style.color = "red";
+            vTextThongBao.style.fontWeight = "Bold";
+        }
+
+        if(vDiceNumber == 2){
+            vImgNumberDice.src ="Image2/2.png";
+            vTextThongBao.innerText = " 2 Điểm - Hãy ném lại lần nữa";
+            vTextThongBao.style.color = "red";
+            vTextThongBao.style.fontWeight = "Bold";
+        }
+
+        if(vDiceNumber == 3){
+            vImgNumberDice.src ="Image2/3.png";
+            vTextThongBao.innerText = "3 Điểm - Hãy ném lại lần nữa";
+            vTextThongBao.style.color = "red";
+            vTextThongBao.style.fontWeight = "Bold";
+        }
+
+        if(vDiceNumber == 4){
+            vImgNumberDice.src ="Image2/4.png";
+            vTextThongBao.innerText = "4 Điểm - Xin chúc mừng";
+            vTextThongBao.style.color = "green";
+            vTextThongBao.style.fontWeight = "Bold";
+        }
+
+        if(vDiceNumber == 5){
+            vImgNumberDice.src ="Image2/5.png";
+            vTextThongBao.innerText = "5 Điểm - Xin chúc mừng";
+            vTextThongBao.style.color = "green";
+            vTextThongBao.style.fontWeight = "Bold";
+        }
+
+        if(vDiceNumber == 6){
+            vImgNumberDice.src ="Image2/6.png";
+            vTextThongBao.innerText = "6 Điểm - Xin chúc mừng";
+            vTextThongBao.style.color = "green";
+            vTextThongBao.style.fontWeight = "Bold";
+        }
+        // Hiển thị voucher
+        var vVoucher = vResponse.voucher;
+        if(vVoucher === null){
+            vVoucherHienThi.innerText = "Không áp dụng";
+            vVoucherHienThi.style.fontWeight = "Bold";
+            vVoucherHienThi.style.color = "Black";
+            vPhanTramHienThi.innerText = "--"
+            vPhanTramHienThi.style.color = "Black";
+        } 
+        else {
+            var bMaVoucher = vResponse.voucher.maVoucher;
+            var bPhanTram = vResponse.voucher.phanTramGiamGia;
+
+            vVoucherHienThi.innerText = bMaVoucher;
+            vVoucherHienThi.style.color = "red";
+            vVoucherHienThi.style.fontWeight = "Bold";
+            vPhanTramHienThi.innerText = "Bạn được giảm: " +  bPhanTram + "%"
+            vPhanTramHienThi.style.color = "red";
+            vPhanTramHienThi.style.fontWeight = "Bold";
+        }
+        // Hiển thị ảnh phần thưởng
+        var vPhanThuong = vResponse.prize;
+
+        console.log("phan thuong " + vPhanThuong);
+        if(vPhanThuong == "Xe máy"){
+            vThongBaoPhanQua.innerText = "Yeahhh - bạn đã trúng 1 chiếc xe máy"
+            vPhanThuongHienThi.src = "LuckyDiceImages/xe-may.jpg"
+            return
+        }
+
+        else if(vPhanThuong == "Car"){
+            vThongBaoPhanQua.innerText = "Yeahhh - bạn đã trúng 1 chiếc Ô-tô"
+            vPhanThuongHienThi.src = "LuckyDiceImages/car.jpg"
+            return 
+        }
+
+        else if(vPhanThuong == "Sổ"){
+            vThongBaoPhanQua.innerText = "Yeahhh - bạn đã trúng 10 cuốn sổ"
+            vPhanThuongHienThi.src = "LuckyDiceImages/so-tay.png"
+            return 
+        }
+
+        else if(vPhanThuong == "Mũ"){
+            vThongBaoPhanQua.innerText = "Yeahhh - bạn đã trúng 5 chiếc mũ"
+            vPhanThuongHienThi.src = "LuckyDiceImages/mu.png"
+            return 
+            
+        }
+
+        else if(vPhanThuong == "Bút"){
+            vThongBaoPhanQua.innerText = "Yeahhh - bạn đã trúng 10 cây bút"
+            vPhanThuongHienThi.src = "LuckyDiceImages/but.png"
+            return 
+        }
+
+        else if(vPhanThuong == "Áo mưa"){
+            vThongBaoPhanQua.innerText = "Yeahhh - bạn đã trúng 02 chiếc áo mưa"
+            vPhanThuongHienThi.src = "LuckyDiceImages/ao-mua.png"
+            return 
+        }
+
+        else if(vPhanThuong === null){
+            console.log(vPhanThuong);
+            vThongBaoPhanQua.innerText = "Bạn không nhận được thêm quà. Chúc bạn may mắn hơn"
+            vPhanThuongHienThi.src = "LuckyDiceImages/gift.png"
+            return 
+        }
+    }
+
+    // Khai báo hàm gọi API lấy lịch sử chơi (Dice History)
+    function goiAPIDiceHistory(paramUser,paramXMLhttp){
+        'use strict';
+        paramXMLhttp.open("GET", gBASE_URL + "/dice-history?username=" + paramUser.username, true);
+        paramXMLhttp.send();
+    }
+
+    // Khai báo hàm hiển thị lịch sử tung xúc xắc
+    function hienThiLichSu(paramXMLhttp){
+        var vResponse = JSON.parse(paramXMLhttp.responseText);
+        console.log(vResponse);
+    }
+    // Hàm hiển thị Dice History lên bảng
+    function hienThiLichSuLenBang(paramXMLhttp){
+        var vDiceHistoryObj = JSON.parse(paramXMLhttp.responseText);
+        var vDiceHistoryTable = document.getElementById("history-placeholder-table");
+        // Truy xuất header và body của bảng
+        var vTheadDiceHistory = vDiceHistoryTable.getElementsByTagName("thead")[0];
+        var vTbodyDiceHistory = vDiceHistoryTable.getElementsByTagName("tbody")[0];
+        // Xoá dữ liệu trước khi chơi ván mới
+        vTheadDiceHistory.innerHTML = "";
+        vTbodyDiceHistory.innerHTML = "";
+        // Thêm tiêu đề
+        var vNewRowHeader = vTheadDiceHistory.insertRow(gEND_OF_ROW_COL);
+        vGameCellHeader = vNewRowHeader.insertCell(0);
+        vDiceCellHeader = vNewRowHeader.insertCell(1);
+        vGameCellHeader.innerHTML = "Game";
+        vGameCellHeader.style.fontWeight = "bold"
+        vDiceCellHeader.innerHTML = "Dice";
+        vDiceCellHeader.style.fontWeight = "bold"
+        // Đổ dữ liệu vào bảng
+        for (var bI = 0; bI < vDiceHistoryObj.dices.length; bI++){
+        var vNewRowBody = vTbodyDiceHistory.insertRow(gEND_OF_ROW_COL);
+        vGameCell = vNewRowBody.insertCell(0);
+        vDiceCell = vNewRowBody.insertCell(1);
+        vGameCell.innerHTML = bI + 1;
+        vDiceCell.innerHTML = vDiceHistoryObj.dices[bI]
+        }
+    }
+
+    // Khai báo hàm gọi API lấy Voucher History 
+    function goiAPIvoucherHistory(paramUser,paramXMLhttp){
+        'use strict';
+        paramXMLhttp.open("GET", gBASE_URL + "/voucher-history?username=" + paramUser.username, true);
+        paramXMLhttp.send();
+    }
+
+    // Hàm hiển thị Voucher History lên bảng
+      function hienThiVoucherLenBang(paramXMLhttp){
+        var vVoucherHistoryObjReceived = JSON.parse(paramXMLhttp.responseText);
+        var vVoucherHistoryObj = vVoucherHistoryObjReceived.vouchers
+        console.log(vVoucherHistoryObjReceived);
+        var vVoucherHistoryTable = document.getElementById("history-placeholder-table");
+        // Truy xuất header và body của bảng
+        var vTheadVoucherHistory = vVoucherHistoryTable.getElementsByTagName("thead")[0];
+        var vTbodyVoucherHistory = vVoucherHistoryTable.getElementsByTagName("tbody")[0];
+        // Xoá dữ liệu trước khi chơi ván mới
+        vTheadVoucherHistory.innerHTML = "";
+        vTbodyVoucherHistory.innerHTML = "";
+        // Thêm tiêu đề
+        var vNewRowHeader = vTheadVoucherHistory.insertRow(gEND_OF_ROW_COL);
+        vGameCellHeader = vNewRowHeader.insertCell(0);
+        vVoucherCellHeader = vNewRowHeader.insertCell(1);
+        vGameCellHeader.innerHTML = "Game";
+        vGameCellHeader.style.fontWeight = "bold"
+        vVoucherCellHeader.innerHTML = "Voucher";
+        vVoucherCellHeader.style.fontWeight = "bold"
+        // Đổ dữ liệu vào bảng
+        for (var bI = 0; bI < vVoucherHistoryObj.length; bI++){
+        var vNewRowBody = vTbodyVoucherHistory.insertRow(gEND_OF_ROW_COL);
+        vGameCell = vNewRowBody.insertCell(0);
+        vVoucherCell = vNewRowBody.insertCell(1);
+        vGameCell.innerHTML = bI + 1;
+        vVoucherCell.innerHTML = vVoucherHistoryObj[bI].maVoucher;
+        }
+    }
+
+    // Khai báo hàm gọi API lấy Present History 
+    function goiAPIpresentHistory(paramUser,paramXMLhttp){
+        'use strict';
+        paramXMLhttp.open("GET", gBASE_URL + "/prize-history?username=" + paramUser.username, true);
+        paramXMLhttp.send();
+    }
+
+    // Hàm hiển thị Present History lên bảng
+      function hienThiPresentLenBang(paramXMLhttp){
+        var vPresentHistoryObj = JSON.parse(paramXMLhttp.responseText);
+        console.log(vPresentHistoryObj);
+        var vPresentHistoryTable = document.getElementById("history-placeholder-table");
+        // Truy xuất header và body của bảng
+        var vTheadPresentHistory = vPresentHistoryTable.getElementsByTagName("thead")[0];
+        var vTbodyPresentHistory = vPresentHistoryTable.getElementsByTagName("tbody")[0];
+        // Xoá dữ liệu trước khi chơi ván mới
+        vTheadPresentHistory.innerHTML = "";
+        vTbodyPresentHistory.innerHTML = "";
+        // Thêm tiêu đề
+        var vNewRowHeader = vTheadPresentHistory.insertRow(gEND_OF_ROW_COL);
+        vGameCellHeader = vNewRowHeader.insertCell(0);
+        vPresentCellHeader = vNewRowHeader.insertCell(1);
+        vGameCellHeader.innerHTML = "Game";
+        vGameCellHeader.style.fontWeight = "bold"
+        vPresentCellHeader.innerHTML = "Present";
+        vPresentCellHeader.style.fontWeight = "bold"
+        // Đổ dữ liệu vào bảng
+        for (var bI = 0; bI < vPresentHistoryObj.prizes.length; bI++){
+        var vNewRowBody = vTbodyPresentHistory.insertRow(gEND_OF_ROW_COL);
+        vGameCell = vNewRowBody.insertCell(0);
+        vPresentCell = vNewRowBody.insertCell(1);
+        vGameCell.innerHTML = bI + 1;
+        vPresentCell.innerHTML = vPresentHistoryObj.prizes[bI];
+        }
+    }
+    </script>
+        </div>
+
+
+
+    </section>
+    <!-- /.content -->
+    </div>
+  <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+        <div class="float-right d-none d-sm-block">
+        <b>Version</b> 3.2.0
+        </div>
+        <strong>Copyright &copy; 2022-2023</strong> DevCamp-NamPhong All rights reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+
+</body>
+</html>

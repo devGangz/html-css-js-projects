@@ -1,0 +1,114 @@
+/* Định dạng màu da cam cho thanh nav-bar */
+.css-nav-orange{
+    background-color:#FFA500;
+}
+/* Định dạng màu cho "Đa dạng" */
+.css-lightgoldenrodyellow{
+    background-color: lightgoldenrodyellow;
+}
+/* Định dạng màu cho "Chất lượng" */
+.css-yellow{
+    background-color:yellow;
+}
+/* Định dạng màu cho "Hương vị" */
+.css-lightsalmon{
+    background-color:lightsalmon;
+}
+/* Định dạng màu cho "Dịch vụ" */
+.css-orange{
+    background-color:orange;
+}
+/* Định dạng cho đường line 1 */
+.line-1{
+    margin-top: 5px;
+    background: #FFD556;
+    height: 1px;
+    border: 0px;
+    width: 320px;
+}
+/* Định dạng cho đường line 2 */
+.line-2{
+    margin-top: 5px;
+    margin-bottom: 1px;
+    background: #FFD556;
+    height: 1px;
+    border: 0px;
+    width: 250px;
+}
+
+/* Định dạng màu nền xám nhạt chỗ nút chọn*/
+.css-bg-chon{
+    background-color: #F7F7F7;
+    border-top: 1px solid #DFDFDF;
+}
+
+/* Định dạng màu nền cam card chọn loại */
+.css-cam-card{
+    background-color: #FFA500;
+}
+
+/* Định dạng lại màu cho tiêu đề */
+.css-cam-tieu-de{
+    color: #FFA400;
+}
+
+/* Định dạng để tương thích với điện thoại */
+/* Ẩn cái nút khi màn hình lớn */
+@media (min-width: 992.1px){
+    .nav-bar-toggler{
+        display: none;
+        }
+}    
+@media (min-width: 576px) and (max-width: 992px){
+    .nav-bar-toggler{
+        display: block;
+        margin-right: 10px;
+        }
+
+    .padding-small{
+        max-width: 50%;
+        padding-bottom: 10px;
+        padding-left: 0px;
+    }
+    .css-footer-medium{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .css-select-do-uong{
+        max-width: 100%;
+        margin: auto;
+    }
+}    
+
+/* Show cái nút khi màn hình bé */
+@media (max-width: 575.99px){
+    .nav-bar-toggler{
+        display: block;
+        margin-right: 10px;
+    }
+    .background-small{
+        margin-left: 0px;
+        background-color: #DFDFDF;
+    }
+
+    .padding-small{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .css-select-do-uong{
+        width: 400px;
+        justify-content: center;
+    }
+}
+
+/* Định dạng cho footer */
+.footer{
+    background-color: #FFA500;
+    height: 220px;
+    font-size: 120%;
+}
+
+/* Đổi lại màu cho cái modal thông báo kết quả */
+.css-change-bg{
+    background-color: #FFA500;
+}

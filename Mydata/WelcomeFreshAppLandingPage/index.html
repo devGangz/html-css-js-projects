@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh - Learning Mobile App!</title>
+  
+  <!-- Nhúng các thư viện BS4 & jQuery, awesome font -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <!-- Các file css và js tự định nghĩa thêm -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<div class="container-fluid" style="width: 100%;">
+    <!-- 1. Menu header  -->
+    <div class="container-fluid d-flex justify-content-around">
+        <div class="col-sm-4 border">
+            <img src="images/logo-fresh.png" alt="" style="width: 10%;">
+        </div>
+        <div class="border col-sm-4">
+            <nav class="navbar navbar-expand-lg navbar-light border pr-0 justify-content-end">
+                <a class="navbar-brand pt-3 mr-5" href="#"><h5>COURSES</h5></a> 
+                <a class="navbar-brand pt-3 mr-5" href="#"><h5>TEACHERS</h5></a>
+                <a class="navbar-brand pt-3 mr-5" href="#"><H5>DOCS</H5></a>
+                <button class="btn btn-primary css-nut-bam-login shadow-lg">LOGIN</button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 2. Highlight section -->
+    <div class="container-fluid row css-back-ground-hightlight border css-back-ground-hightlight-2">
+        <div class="col-sm-5 border align-self-center" style="margin-left: 154px;">
+            <div class="border">
+                <p id="welcome-title">Welcome to Fresh Mobile App</p>
+            </div >
+            <div class="border">
+                <p id="fresh-app-paragraph" style="color: #677589;">Fresh Mobile App is an online learning and teaching marketplace with over 5000 courses and 1 million students. Instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
+            </div>
+            <div class="border">
+                <h6 style="color: #606B79;">Download the app now:</h6>
+            </div>
+            <div class="">
+                <button class="col-sm-4 shadow-lg btn btn-primary css-nut-bam-app mr-3"><i class="fab fa-apple"></i>&nbsp;APP STORE</button>
+                <button class="col-sm-4 shadow-lg btn btn-primary css-nut-bam-app"><i class="fab fa-google-play"></i>&nbsp;GOOGLE PLAY</button>     
+            </div>
+        </div>
+        <div class="col-sm-4 border align-self-center">
+            <img src="images/holding-phone.svg" class="border mb-1" alt="" width="85%">
+        </div>
+    </div>
+    <!-- 3. Các chức năng (features) -->
+    <div class="container-fluid css-mau-nen-xam row">
+        <div class="col-sm-3 css-mau-nen-xam">
+            <img src="images/screen-2.png" width="70%" style="margin-left: 154px; margin-top: 50px;">
+        </div>
+        <div class="col-sm-4 border" style="margin-left: 120px; margin-top: 50px; margin-right: 20px;">
+            <div class="border mb-4 mt-5 col-sm-12 row">
+                <div class="border col-2 align-self-center mr-3">
+                    <i class="fas fa-universal-access fa-2x" style="color: #0163EE"></i>
+                </div>
+                <div>
+                    <h3>Accessible</h3>
+                    <h5>Built with accessibility in mind
+                        and <br> following best practices.</h5>
+                </div>
+            </div>
+
+            <div class="border mb-4 mt-5 col-sm-12 row">
+                <div class="border col-2 align-self-center mr-3">
+                    <i class="fas fa-book fa-2x" style="color: #0163EE"></i>
+                </div>
+                <div>
+                    <h3>Thousand courses</h3>
+                    <h5>More than 1600 courses from the most <br> popular Teachers in the world</h5>
+                </div>
+
+            </div>
+
+            <div class="border mb-4 mt-5 col-sm-12 row">
+                <div class="border col-2 align-self-center mr-3">
+                    <i class="fas fa-building fa-2x" style="color: #0163EE"></i>
+                </div>
+                <div>
+                    <h3>Easy to use</h3>
+                    <h5>Easily customize your profile and your <br> learning center.</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 border" style=" margin-top: 50px;">
+            <div class="border mb-4 mt-5 col-sm-12 row">
+                <div class="border col-2 align-self-center mr-3">
+                    <i class="fas fa-mobile-alt fa-2x" style="color: #0163EE"></i>
+                </div>
+                <div>
+                    <h3>Mobile First</h3>
+                    <h5>Get best experience with mobile first <br> User Interface</h5>
+                </div>
+            </div>
+
+            <div class="border mb-4 mt-5 col-sm-12 row">
+                <div class="border col-2 align-self-center mr-3">
+                    <i class="fas fa-download fa-2x" style="color: #0163EE"></i>
+                </div>
+                <div>
+                    <h3>Content up to date</h3>
+                    <h5>The content often be up to date by <br> teachers</h5>
+                </div>
+            </div>
+
+            <div class="border mb-4 mt-5 col-sm-12 row">
+                <div class="border col-2 align-self-center mr-3">
+                    <i class="fas fa-user fa-2x" style="color: #0163EE"></i>
+                </div>
+                <div>
+                    <h3>Many ways to login</h3>
+                    <h5>Login with email, account or facebook</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 4. khách hàng phản hồi và bảng giá -->
+    <div class="container-fluid d-flex justify-content-around bg bg-light">
+        <hr id="css-gach-ngang">
+    </div>
+    <div class="container-fluid d-flex justify-content-around bg bg-light">
+        <h2>What our customers are saying...</h2>
+    </div>
+    <div class="row bg bg-light d-flex justify-content-around">
+        <div class="border mt-5 pt-5 shadow" style="margin-left: 175px; border-radius: 10px; background-color: #fff; height: 375px; width: 31rem;" >
+            <div class="pb-3 d-flex justify-content-around">
+                <img class="card-img-top" src="images/customers/leo-gill.jpg" alt="Card image cap" style="border-radius: 50%; width: 30%;">
+            </div>
+            <div class="card-body text-center">
+                <h6>This app is awesome! <br> We've seen amazing results already.</h6>
+            </div>
+            <div class="text-center pb-5">
+                <h5>LEO GILL</h5>
+            </div>
+        </div>
+
+        <div class="border mt-5 pt-5 shadow" style="border-radius: 10px; background-color: #fff; height: 400px; width: 31rem" >
+            <div class="pb-3 d-flex justify-content-around">
+                <img class="card-img-top" src="images/customers/renee-sims.jpg" alt="Card image cap" style="border-radius: 50%; width: 30%;">
+            </div>
+            <div class="card-body text-center">
+                <h6>It really saves me time and effort. <br> This app is exactly what our <br>business has been lacking.</h6>
+            </div>
+            <div class="text-center pb-5">
+                <h5>RENEE SIMS</h5>
+            </div>
+        </div>
+
+        <div class="border mt-5 pt-5 shadow" style="margin-right: 176px; border-radius: 10px; background-color: #fff; height: 375px; width: 31rem" >
+            <div class="pb-3 d-flex justify-content-around">
+                <img class="card-img-top" src="images/customers/dallas-kwok.jpg" alt="Card image cap" style="border-radius: 50%; width: 30%;">
+            </div>
+            <div class="card-body text-center">
+                <h6>This app impressed me on <br> multiple levels.</h6>
+            </div>
+            <div class="text-center pb-5">
+                <h5>DALLAS KWOK</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-around bg bg-light" style="width: 100%;">
+        <hr id="css-gach-ngang">
+    </div>
+    <div class="container-fluid d-flex justify-content-around bg bg-light" style="width: 100%;">
+        <h2>Simple pricing</h2>
+    </div>
+    <div class="row bg bg-light d-flex justify-content-center">
+        <div class="border mt-5 shadow" style=" margin-right: 37px; border-radius: 10px; background-color: #fff; height: 375px; width: 31rem;" >
+            <div class="text-center pt-5">
+                <h5>Starter</h5>
+                <h2>Free</h2>
+                <h6 style="color: #677589;">Forever</h6>
+            </div>
+            <hr>
+            <div class="pl-5 pt-3">
+                <p><i class="far fa-check-circle" style="color: #0163EE"></i>&nbsp;Custom login</p> <br>
+                <p><i class="far fa-check-circle" style="color: #0163EE"></i>&nbsp;Access 100+ free courses</p> <br>
+                <p><i class="far fa-check-circle" style="color: #0163EE"></i>&nbsp;2 hours learning continuously</p>
+            </div>
+            
+        </div>
+
+        <div class="border mt-5 shadow" style="border-radius: 10px; background-color: #fff; height: 375px; width: 31rem" >
+            <div class="text-center pt-5">
+                <h5>Professional</h5>
+                <h2>$9</h2>
+                <h6 style="color: #677589;">per month</h6>
+            </div>
+            <hr>
+            <div class="pl-5 pt-3">
+                <p><i class="far fa-check-circle" style="color: #0163EE"></i>&nbsp;All Starter features</p> <br>
+                <p><i class="far fa-check-circle" style="color: #0163EE"></i>&nbsp;Access 50+ premium cours</p> <br>
+                <p><i class="far fa-check-circle" style="color: #0163EE"></i>&nbsp;24 hours learning continuously</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-around bg bg-light">
+        <hr id="css-gach-ngang">
+    </div>
+    <div class="container-fluid d-flex justify-content-around bg bg-light">
+        <h3>Download Now</h3>
+    </div>
+    <!-- 5. Footer section -->
+    <div class="container-fluid footer">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="pt-4">
+                <button class="shadow-lg btn btn-primary css-nut-bam-app mr-4"><i class="fab fa-apple"></i>&nbsp;APP STORE</button>
+            </div>
+            <div class="pt-4">
+                <button class="shadow-lg btn btn-primary css-nut-bam-app"><i class="fab fa-google-play"></i>&nbsp;GOOGLE PLAY</button>
+            </div>
+        </div>
+        
+        <div class=" border container-fluid row" style="margin-top: 150px;margin-left: 125px; margin-right: 125px;">
+            <div class="col-2 border" style="margin-right: 150px;">
+                <h2>Fresh Mobile App</h2>
+                <p>Fresh Mobile App is an Education <br> app built on React Native</p>
+            </div>
+
+            <div class="col-1 border text-left " style="margin-right: 150px;">
+                <div>
+                    <h2>About</h2>
+                    <div class="text-left" style="color: #677589;">
+                        <h6 class="pt-3">About Us</h6>
+                        <h6 class="pt-3">Team</h6>
+                        <h6 class="pt-3">Blog</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 border text-left" style="margin-right: 150px;">
+                <div>
+                    <h2>Services</h2>
+                    <div class="text-left" style="color: #677589;">
+                        <h6 class="pt-3">Design</h6>
+                        <h6 class="pt-3">Themes</h6>
+                        <h6 class="pt-3">Branding</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 border text-left" style="margin-right: 150px;">
+                <div>
+                    <h2>Help</h2>
+                    <div class="text-left" style="color: #677589;">
+                        <h6 class="pt-3">FAQs</h6>
+                        <h6 class="pt-3">Docs</h6>
+                        <h6 class="pt-3">Tutorials</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 border text-left" style="margin-right: 150px;">
+                <div>
+                    <h2>Contact</h2>
+                    <div class="text-left" style="color: #677589;">
+                        <h6 class="pt-3">Contact</h6>
+                        <h6 class="pt-3">Email</h6>
+                        <h6 class="pt-3">Chat</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="margin-left: 160px; margin-right: 160px;" class="mt-4">
+        <div style="margin-left: 160px;" class="pt-2">
+            <h6>Copyright <i class="far fa-copyright"></i>&nbsp;2022 - PhongDev120</h6>
+        </div>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
