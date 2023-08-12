@@ -296,7 +296,7 @@ function validateInforOrder(paramOrder) {
 // Hàm gọi Api để sửa dữ liệu (chuyển trạng thái)
 function callApiToChangeStatus(paramObjectRequest) {
     $.ajax({
-        url: "http://203.171.20.210:8080/devcamp-pizza365/orders/" + gOrderInRow.id,
+        url: "https://203.171.20.210:8080/devcamp-pizza365/orders/" + gOrderInRow.id,
         type: "PUT",
         contentType: "application/json; charset = UTF-8",
         data: JSON.stringify(paramObjectRequest),

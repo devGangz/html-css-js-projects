@@ -70,7 +70,7 @@ function onBtnSendClick() {
 function callApiToGetPercentDiscount(paramVoucherRequest) {
     'use strict';
     $.ajax({
-        url: "http://203.171.20.210:8080/devcamp-pizza365/voucher_detail/" + paramVoucherRequest,
+        url: "https://203.171.20.210:8080/devcamp-pizza365/voucher_detail/" + paramVoucherRequest,
         type: "GET",
         async: false,
         success: function (paramObject) {

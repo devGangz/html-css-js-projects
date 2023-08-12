@@ -21,7 +21,7 @@ function onPageLoading() {
 function getDrinkList() {
     'use strict';
     $.ajax({
-        url: "http://203.171.20.210:8080/devcamp-pizza365/drinks",
+        url: "https://203.171.20.210:8080/devcamp-pizza365/drinks",
         type: "GET",
         async: false,
         success: function (responseObject) {

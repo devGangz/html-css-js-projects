@@ -190,7 +190,7 @@ function clearDataOnModalAddNew() {
 function getDrinkList() {
     'use strict';
     $.ajax({
-        url: "http://203.171.20.210:8080/devcamp-pizza365/drinks",
+        url: "https://203.171.20.210:8080/devcamp-pizza365/drinks",
         type: "GET",
         async: false,
         success: function (responseObject) {
@@ -268,7 +268,7 @@ function tinhSoTienDuocGiam() {
 function callApiToGetPercentDiscount(paramVoucherRequest) {
     'use strict';
     $.ajax({
-        url: "http://203.171.20.210:8080/devcamp-pizza365/voucher_detail/" + paramVoucherRequest,
+        url: "https://203.171.20.210:8080/devcamp-pizza365/voucher_detail/" + paramVoucherRequest,
         type: "GET",
         async: false,
         success: function (paramObject) {
@@ -286,7 +286,7 @@ function callApiToCreateNewOrder(paramRequest) {
     'use strict';
     console.log("Dữ liệu hợp lệ");
     $.ajax({
-        url: "http://203.171.20.210:8080/devcamp-pizza365/orders/",
+        url: "https://203.171.20.210:8080/devcamp-pizza365/orders/",
         type: "POST",
         contentType: "application/json; charset = UTF-8",
         data: JSON.stringify(paramRequest),
