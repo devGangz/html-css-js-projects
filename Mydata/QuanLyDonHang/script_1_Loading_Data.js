@@ -83,7 +83,7 @@ function onPageLoading() {
 function callApiToGetPizzaOrderArr() {
     'use strict';
     $.ajax({
-        url: "https://203.171.20.210:8080/devcamp-pizza365/orders",
+        url: "http://203.171.20.210:8080/devcamp-pizza365/orders",
         type: "GET",
         async: false,
         success: function (responseArr) {
