@@ -39,7 +39,7 @@ function hideModalDeleteOrder() {
 function callApiToDeleteOrder() {
     'use strict';
     $.ajax({
-        url: "https://203.171.20.210:8080/devcamp-pizza365/orders/" + gOrderInRow.id,
+        url: "http://203.171.20.210:8080/devcamp-pizza365/orders/" + gOrderInRow.id,
         type: "DELETE",
         success: function () {
             alert("Đơn hàng đã được xoá")
