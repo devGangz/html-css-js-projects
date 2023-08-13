@@ -101,7 +101,7 @@ function getInformationToCreateNewOrder(paramNewOrder) {
 function callApiCreateNewOrder(paramNewOrder) {
     'use strict';
     $.ajax({
-        url: "https://203.171.20.210:8080/devcamp-pizza365/orders/",
+        url: "http://203.171.20.210:8080/devcamp-pizza365/orders/",
         type: "POST",
         contentType: "application/json; charset = UTF-8",
         data: JSON.stringify(paramNewOrder),
